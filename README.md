@@ -1,48 +1,67 @@
 # Dockerized Flask Web Application
 
-## Project Description
+## Project Overview
 
-This project demonstrates how to containerize a simple Flask web application using Docker.
+This project demonstrates how to containerize a simple Flask web application using Docker. The application runs inside a Docker container, making it portable and easy to deploy on any system with Docker installed.
 
 ## Technologies Used
 
-- Python
+- Python 3.11
 - Flask
 - Docker
-- Docker Compose
-- VS Code
+- Docker Desktop
+- Visual Studio Code
+- Git & GitHub
 
 ## Project Structure
 
 DockerWebApp/
-├── app.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── README.md
+│── app.py
+│── Dockerfile
+│── requirements.txt
+│── README.md
+│── .dockerignore
 └── templates/
     └── index.html
 
-## Build Docker Image
+## How to Run
+
+Clone the repository
+
+```bash
+git clone https://github.com/Anu2005goyal/dockerized-flask-webapp.git
+```
+
+Go to the project folder
+
+```bash
+cd dockerized-flask-webapp
+```
+
+Build the Docker image
 
 ```bash
 docker build -t flask-demo .
 ```
 
-## Run Docker Container
+Run the container
 
 ```bash
 docker run -p 5000:5000 flask-demo
 ```
 
-## Run Using Docker Compose
+Open your browser
 
-```bash
-docker compose up --build
+```
+http://localhost:5000
 ```
 
-## Stop Docker Compose
+## Output
 
-```bash
-docker compose down
-```
+The application displays:
+
+**Welcome to my Dockerized Flask Application**
+
+## Author
+
+Anushka Goyal
